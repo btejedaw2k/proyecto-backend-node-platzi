@@ -1,11 +1,11 @@
 const express = require('express');
-//const bodyParser = require('body-parser');
+const bodyParser = require('body-parser');
 
 const config = require('../config.js');
 const user = require('./components/user/network');
 const app = express();
 
-//app.use(bodyParser.json());
+app.use(bodyParser.json());
 
 // Routing
 

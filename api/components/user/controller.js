@@ -1,4 +1,4 @@
-const nanoId = require('nanoid');
+//const nanoId = require('nanoid');
 const Table = 'users';
 
 module.exports = function(injectedStore) {
@@ -16,7 +16,7 @@ module.exports = function(injectedStore) {
     }
 
     function upSert(body) {
-        const user = {
+        /* const user = {
             name: body.name,
             last_name: body.last_name
         }
@@ -25,7 +25,7 @@ module.exports = function(injectedStore) {
         }
         else {
             user.id = nanoId();
-        }
+        } */
 
         return store.upSert(Table, user);
     }
