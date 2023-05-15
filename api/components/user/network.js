@@ -1,5 +1,4 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 
 const response = require('../../../network/response');
 const controller = require('./index');
